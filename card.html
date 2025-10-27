@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>દિવ્ય "ફુલારા ગરબા" આમંત્રણ</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Background animation */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fff5e1, #ffd1b3, #ffecd2);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: #5b2c06;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Entrance Screen */
+#welcome {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 2s ease-in-out;
+}
+#welcome h1 {
+  font-family: 'Great Vibes', cursive;
+  color: #b22222;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #ffb84d, 0 0 30px #ff944d;
+}
+#welcome h2 {
+  color: #8b0000;
+  font-size: 22px;
+  margin-bottom: 20px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+#welcome img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px dashed #ff944d;
+  animation: spin 10s linear infinite;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 153, 0, 0.7);
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ffcc66; }
+  to { text-shadow: 0 0 20px #ff751a; }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Hidden invitation card */
+.card {
+  display: none;
+  max-width: 550px;
+  margin: 40px auto;
+  background: #fffaf3;
+  border: 5px solid #ffb347;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 0 35px rgba(255, 153, 0, 0.6);
+  animation: fadeInCard 1.5s ease-in-out forwards;
+}
+@keyframes fadeInCard {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Text styling */
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 44px;
+  color: #c71c1c;
+  text-shadow: 0 0 10px #ffb84d, 0 0 20px #ff944d;
+}
+h2 {
+  color: #b34700;
+  margin-top: 10px;
+}
+p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* Shayri styling */
+.shayri {
+  font-style: italic;
+  color: #a33;
+  margin: 10px 0;
+}
+.contact {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+.contact b {
+  color: #b34700;
+}
+
+/* Floating diya animation */
+.floating-lamps {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+.lamp {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  opacity: 0.8;
+  animation: floatUp 10s linear infinite;
+}
+.lamp.delay1 { left: 20%; animation-delay: 3s; }
+.lamp.delay2 { left: 70%; animation-delay: 5s; }
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 0.9; }
+  100% { transform: translateY(-500px); opacity: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- Welcome Screen -->
+<section id="welcome">
+  <h2>॥ શ્રી ગણેશાય નમઃ ॥</h2>
+  <h2>॥ શ્રી ઉમિયા માતાજી નમઃ ॥</h2>
+  <h1>🙏 દિવ્ય "ફુલારા ગરબા" આમંત્રણ 🙏</h1>
+  <p>👇 કૃપા કરીને રાધા–કૃષ્ણની તસવીર પર ક્લિક કરો 👇</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyWo6CiaBj_GUOszaGAcbibyW7N0D55_CKAQ&s" alt="Radha Krishna Couple" onclick="showInvitation()">
+</section>
+
+<!-- Invitation Card -->
+<div class="card" id="invitationCard">
+  <h1>💫 દિવ્ય "ફુલારા ગરબા" 💫</h1>
+
+  <p>પરમ કૃપાળુ પરમાત્માની દયાથી અને શ્રી ઉમિયા માતાજીની અસીમ કૃપા સાથે,</p>
+  <p>શ્રી મનુભાઈ હીરાલાલભાઈ પટેલના સમગ્ર પરિવાર દ્વારા દિપોની ભક્તિમાં આયોજિત દિવ્ય "ફુલારા ગરબા" (રાસ ગરબા) ના શુભ અવસરે, આપ સૌ સ્નેહીજનોને હાર્દિક આમંત્રણ પાઠવવામાં આવે છે.</p>
+  <p>આ પવિત્ર પ્રસંગે પધારી, માતાજીના દર્શનનો લાભ લેવા અને અમારા આનંદમાં સહભાગી થવા વિનંતી છે।</p>
+
+  <div class="shayri">
+    🌸 "ગરબાની લયમાં મળે પ્રેમ અને ભક્તિ,<br>
+    આવે મળવા આપ સૌ, જીવશે ખુશી અખંડિત।" 🌸
+  </div>
+
+  <h2>પરિવાર સાથે આનંદભર્યો રાસ ગરબા</h2>
+
+  <p>📅 <b>તારીખ :</b> રવિવાર, ૯ નવેમ્બર ૨૦૨૫</p>
+  <p>🗓️ <b>તિથિ :</b> મહા વદ ૫</p>
+  <p>🍽️ <b>ભોજન સમય :</b> સાંજે ૬:૦૦ વાગ્યે</p>
+  <p>📍 <b>સ્થળ :</b> શ્રી મનુભાઈ હીરાલાલભાઈ પટેલનું નિવાસસ્થાન,<br>ભગવાનજીની મૂવડી, આંત્રોલી, કાપડવંજ, જી. ખેડા</p>
+
+  <div class="contact">
+    📞 <b>સંપર્ક સંખ્યા :</b><br>
+    મનુભાઈ: 9624503936<br>
+    ઇન્દ્રવદન: 9099628790<br>
+    અમિત: 9998162861
+  </div>
+
+  <p>આપ સૌને હાર્દિક આમંત્રણ છે 🌸<br>તમારી ઉપસ્થિતિ અમારું સન્માન છે 💐</p>
+</div>
+
+<!-- Floating diyas -->
+<div class="floating-lamps">
+  <img src="https://cdn-icons-png.flaticon.com/512/1086/1086741.png" class="lamp">
+  <img src="https://cdn-icons-png.flaticon.com/512/1086/1086741.png" class="lamp delay1">
+  <img src="https://cdn-icons-png.flaticon.com/512/1086/1086741.png" class="lamp delay2">
+</div>
+
+<script>
+function showInvitation() {
+  document.getElementById('welcome').style.display = 'none';
+  document.getElementById('invitationCard').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
